@@ -18,6 +18,9 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n){
             nums1[index--]=nums2[nums2Index--];
         }
     }
+    while(nums2Index>=0){
+        nums1[index--] = nums2[nums2Index--];
+    }
 }
 
 int main()
